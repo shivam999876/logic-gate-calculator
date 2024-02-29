@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logic Gate Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="inputs">
+          <!-- Heading and instruction for user -->
+          <h3>LOGIC GATE CALCULATOR</h3>
+          <p>(Please enter 1-digit binary number)</p>
+
+          <!-- First input field -->
+          <label for="input1">INPUT 1 :</label>
+          <input type="text" id="input1" class="input" required>
+
+          <!-- Dropdown for selecting gates -->
+          <select id="gateType">
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+            <option value="XOR">XOR</option>
+            <option value="XNOR">XNOR</option>
+            <option value="NAND">NAND</option>
+            <option value="NOR">NOR</option>
+          </select>
+
+          <!-- Second input field -->
+          <label for="input2">INPUT 2 :</label>
+          <input type="text" id="input2" class="input" required>
+
+          <!-- Submit button -->
+          <button onclick="calculate()">CALCULATE</button>
+          
+        </div>
+
+        <!-- Output display -->
+        <div class="output">
+          <p>Output : <span id="output"></span></p>
+        </div>
+        <div class="credit">
+            <p>Created by : <a href="https://linktr.ee/shivamkumar3" target="_blank">Shivam Kumar</a>
+              </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
